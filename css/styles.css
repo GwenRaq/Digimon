@@ -9,15 +9,20 @@ body, .hero{
 	display:inline-block;
 }
 #logo{
-	float:left;
+	display:inline-block;
+	vertical-align: middle;
 }
 
-#digi{
-	float:left;
+#digimon{
+	display:inline-block;
+	vertical-align: middle;
 }
 
 h1, h2, h3, .menu{
 	font-family: 'Sarpanch', sans-serif;
+}
+h1{
+	font-size:25px;
 }
 .menu{
 	float:right;
@@ -25,6 +30,7 @@ h1, h2, h3, .menu{
 .menu li{
 	display:inline-block;
 	margin: auto 15px;
+	font-size:18px;
 }
 
 .bluepart{
@@ -38,18 +44,31 @@ h1, h2, h3, .menu{
 }
 .hero{
 	height:200px;
-	width:500px;
-	background-color:#FFF;
-	padding:10px;
+	width:490px;
+	background-color:white;
+	padding:8px;
 	border-radius: 20px;
 	border:20px solid white;
 	background-image:url(https://raw.githubusercontent.com/GwenRaq/Digimon/master/Assets/talkie.png);
 	background-repeat: no-repeat;
 	background-position: right center;
 }
-.questions{
+.hero hr{
+	width:300px;
+	float:left;
+}
+.hero p{
+	width:260px;
+	font-size:20px;
+}
+.questions {
 	background-color:lightgray;
+}
+.questions h1{
 	text-align:center;
+}
+.q li{
+	text-align:left;
 }
 .q{
 	width: 300px;
@@ -61,12 +80,10 @@ h1, h2, h3, .menu{
 	margin:35px 20px;
 	border-radius: 15px;
 }
-.q ol li{
-	
-}
 
 footer{
 	background-color:gray;
 	text-align:center;
 	height:75%;
 }
+footer p
