@@ -1,5 +1,15 @@
 header {
 	background-color: #FFF;
+	height:75px;
+	padding-top:10px;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content:"";
+  clear: both;
+  height: 0;
 }
 body, .hero{
 	font-family: 'Lato', sans-serif;
@@ -11,6 +21,7 @@ body, .hero{
 #logo{
 	display:inline-block;
 	vertical-align: middle;
+	padding-left:100px;
 }
 
 #digimon{
@@ -18,7 +29,7 @@ body, .hero{
 	vertical-align: middle;
 }
 
-h1, h2, h3, .menu{
+h1, .menu, footer{
 	font-family: 'Sarpanch', sans-serif;
 }
 h1{
@@ -26,16 +37,21 @@ h1{
 }
 .menu{
 	float:right;
+	color:#0E588D;
 }
-.menu li{
+.menu ul li{
 	display:inline-block;
 	margin: auto 15px;
 	font-size:18px;
 }
+.menu li:hover {
+	color:orange;
+	border-bottom:2px solid orange;
+}
 
 .bluepart{
-	background-color: blue;
-	height:360px;
+	background-color: #0E588D;
+	height:330px;
 	width: auto;
 	padding:100px;
 	background-image: url(https://raw.githubusercontent.com/GwenRaq/Digimon/master/Assets/hero.png);
@@ -61,14 +77,21 @@ h1{
 	width:260px;
 	font-size:20px;
 }
+.hero h1{
+	color:#0E588D;
+}
 .questions {
 	background-color:lightgray;
 }
 .questions h1{
 	text-align:center;
+	color:#0E588D;
 }
-.q li{
-	text-align:left;
+.questions ol{
+	float:center;
+}
+.questions li{
+	padding-right:100px;
 }
 .q{
 	width: 300px;
@@ -79,11 +102,20 @@ h1{
 	vertical-align:middle;
 	margin:35px 20px;
 	border-radius: 15px;
+	font-size:15px;
+
+}
+.q p{
+	vertical-align:center;
 }
 
 footer{
 	background-color:gray;
 	text-align:center;
-	height:75%;
+	height:50px;
+
 }
-footer p
+footer p{
+	color:white;
+	display:inline-block;
+}
